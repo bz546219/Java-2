@@ -1,7 +1,7 @@
 public class Main{
     static public void main(String[] args){
-        int num = 3;
-        num = 5;
-        System.out.println(num); 
+        int x,y,z;
+        x=y=z=50;
+        System.out.println(x+y+z);
     }
 }
