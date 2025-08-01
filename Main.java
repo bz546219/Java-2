@@ -6,6 +6,8 @@ public class Main{
         System.out.println(firstName.concat(lastName));
         System.out.println("It\'s a bird!");
         System.out.println("\tWhen we're writing an essay, remember to press \'tab\'.");
+        System.out.println("\fHello World");
+        System.out.println("\nHello World");
 
     }
 }
