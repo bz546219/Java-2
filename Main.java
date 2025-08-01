@@ -1,12 +1,11 @@
 public class Main{
     static public void main(String[] args){
 
-        //Variables
-        int length = 5, width = 6, area;
+        String firstName = "John ";
+        String lastName = "Doe";
+        System.out.println(firstName.concat(lastName));
+        System.out.println("It\'s a bird!");
+        System.out.println("\tWhen we're writing an essay, remember to press \'tab\'.");
 
-        //Calculate the area
-        area = length * width;
-
-        System.out.println(area);
     }
 }
