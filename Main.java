@@ -40,7 +40,7 @@
     String → store a sequence of characters (text)
     Arrays
     Classes
-     */
+    */
 
     //Examples
     public class Main{
@@ -82,7 +82,7 @@
 
 //Java Operators
     /*
-    Arithmetic Operators
+    Arithmetic Operators:
     - '+' → adds together two values
     - '-' → subtracts one value from another
     - '*' → multiplies two values
@@ -97,7 +97,7 @@
     - '>=' → greater than or equal to
     - '<=' → less than or equal to
 
-    Assignment Operators
+    Assignment Operators:
     Operator    Example    Same As
     =           x = 5      x = 5
     +=          x += 3     x = x + 3
@@ -105,23 +105,72 @@
     %=          x %= 3     x = x % 3
     Applies to other symbol too
 
-    Java Logical Operators
+    Java Logical Operators:
     - '&& (Logical and)' Returns true if both statements are true
     - '|| (Logical or)' Returns true if one of the statements is true
     - '! (Logical not)' Reverse the result, returns false if the result is true
-     */
-    //Examples
+    */
+    //Examples:
     public class Main{
         public static void main(String[] args){
             int x = 10;
             x+=5;
             System.out.println(x);
         }
-}
+    }
 
 //Java Strings
+    /*
+    - length() → number of characters in string
+    - toUpperCase() → converts all letters to uppercase
+    - toLowerCase() → converts all letters to lowercase
+    - indexOf("x") → finds first position of substring "x"
+    */
 
-    
+    //Examples:
+    public class Main{
+        public static void main(String[] args){
+            String txt = "Please locate where 'locate' occurs!";
+            System.out.println(txt.indexOf("locate"));
+        }
+    }
+
+    /*
+    - Known as concatenation, we can combine strings by using the + operation or the
+    concat() method
+    - Strings are concatenated, while numbers are added
+    */
+
+    //Examples:
+    public class Main{
+        public static void main(String[] args){
+            String firstName = "John";
+            String lastName = "Doe";
+            System.out.println(firstName.concat(lastName));
+        }
+    }
+
+    /*
+    Strings (Special Characters):
+    - \' → Single quote
+    - \" → Double quote
+    - \\ → Backslash
+    - \n → New line
+    - \r → Carriage return
+    - \t → Tab
+    - \b → Backspace
+    - \f → Form feed
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            String txt = "It\'s alright";
+            System.out.println(txt);
+        }
+    }
+
+//Java Math
 
 
 
