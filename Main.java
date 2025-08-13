@@ -171,7 +171,38 @@
     }
 
 //Java Math
+    /*
+    - Math.max → Find the highest value of x and y
+    - Math.min → Find the lowest value of x and y
+    - Math.sqrt → Returns the square root of x
+    - Math.abs → Returns the absolute or positive value of x
+    - Math.random → Returns a random number between 0.0 (inclusive) or 1.0
+    (exclusive)
+    */
 
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            int random = (int)(Math.random() * 101);
+            System.out.println(random);
+        }
+    }
+
+//Java Booleans
+    /*
+    - Boolean is a data type that returns true or false
+    - A boolean expression returns a boolean value (true or false)
+        EX: You can use a comparison symbol, such as >
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            int myAge = 16;
+            int votingAge = 18;
+            System.out.println(myAge > votingAge);
+        }
+    }
 
 
 
