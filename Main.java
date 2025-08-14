@@ -204,6 +204,43 @@
         }
     }
 
+//Java if... else
+    /*
+    - Use the if statement to specify a block of Java code to be executed if a
+    condition is true
+    - Use the else statement to specify a block of code to be executed if the
+    condition is false
+    - Use the else if statement to specify a new condition if the first condition
+    is false
+    - There is also a short-hand if else, which is known as the ternary operator
+    because it consists of three operands
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            int time = 22;
+            if (time < 10){
+                System.out.println("Good morning.");
+            }
+            else if (time < 18){
+                System.out.println("Good day.");
+            }
+            else{
+                System.out.println("Good evening.");
+            }
+        }
+    }
+
+    public class Main{
+        public static void main(String[] args){
+            int time = 20;
+            String result = (time < 18) ? "Good day." : "Good evening.";
+            System.out.println(result);
+        }
+    }
+
+//Java Switch
 
 
 
