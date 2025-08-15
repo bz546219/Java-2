@@ -241,6 +241,38 @@
     }
 
 //Java Switch
+    /*
+    - Lets you replace multiple if...else if...else statements with a
+    cleaner structure that selects one block of code to run based on an
+    expression’s value
+    - The break keyboard stops execution of the switch block after a match is
+    found, prevents the code from “falling through” to the next case, saves
+    execution time by skipping unnecessary checks
+    - The default keyboard runs if no case matches the expression, often placed in
+    the switch block, does not require break if it's the last statement
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            int day = 4;
+            switch (day) {
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                case 7:
+                    System.out.println("Sunday");
+                    break;
+                default:
+                    System.out.println("Looking forward to the weekend!");
+            }
+        }
+    }
+
+//Java While Loop
+    /*
+
+    */
 
 
 
