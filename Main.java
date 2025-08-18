@@ -271,8 +271,116 @@
 
 //Java While Loop
     /*
-
+    - While loop run as long as conditions are true
+    - Do/While loop will run at least once, EVEN if the condition is false
+    - Update the variable inside the condition or the loop will run forever
+    - Do/While loop is useful when you need the code to execute before testing
+    the condition
     */
 
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+            int countdown = 3;
+            while (countdown > 0){
+                System.out.println(countdown);
+                countdown--;
+            }
+            System.out.println("Happy New Year!");
+        }
+    }
 
+    public class Main{
+        public static void main(String[] args){
+             int i = 10;
+             do {
+                 System.out.println("i is" + i);
+                 i++;
+             }
+             while (i < 5);
+        }
+    }
 
+//Java For Loop
+    /*
+    - When you know exactly how many times you want to loop through a block of
+    code, use the for loop instead of a while loop
+    - Statement 1 is executed (one time) before the execution of the code block
+    - Statement 2 defines the condition for executing the code block
+    - Statement 3 is executed (every time) after the code block has been executed
+
+    Nested Loops:
+    - A loop inside another loop
+    - Outer loop runs first
+    - For each outer iteration, the inner loop runs fully
+
+    For-Each Loop:
+    - Used for arrays/collections
+    - iterates directly through element
+    */
+
+    //Example
+    public class Main{
+        public static void main(String[] args){
+            int sum = 0;
+            for (int i = 1; i <= 5; i++) {
+                sum = sum + i
+            }
+            System.out.println("Sum is " + sum);
+        }
+    }
+
+    public class Main{
+        public static void main(String[] args){
+            for (int i = 1; i <= 3; i++){
+                for (int j = 1; j<= 3; j++){
+                    System.out.print(i * j + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    public class Main{
+        public static void main(String[] args){
+            String [] cars = {"volvo", "BMW", "Ford", "Mazda"};
+            for (String i : cars) {
+                System.out.println(i);
+            }
+        }
+    }
+
+//Java Break or Continue
+    /*
+    Java Break:
+    - Purpose: Immediately exits the entire loop when a certain condition is met
+    - Use case: Stop looping once you found what you need
+
+    Java Continue:
+    - Purpose: Skips only the current iteration and continues with the next
+    iteration
+    - Use case: Ignore certain cases but keep looping
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String[] args){
+           for (int i = 0; i < 10; i++){
+               if (i == 4) {
+                   break;
+               }
+           System.out.println(i);
+           }
+        }
+    }
+
+    public class Main{
+        public static void main(String [] args){
+           for (int i = 0; i < 10; i++){
+               if (i == 4) {
+                   continue;
+               }
+               System.out.println(i);
+           }
+        }
+    }
