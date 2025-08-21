@@ -384,3 +384,46 @@
            }
         }
     }
+
+//Java Arrays
+
+    /*
+    - An array lets you store multiple values in a single variable
+    - 'String [] cars;' Declares an array of String values
+    (but doesn’t fill it yet)
+    - You can loop through the array elements with the for loop, and use the
+    length property to specify how many times the loop should run
+
+    Multidimensional Arrays:
+    - A multidimensional array is an array of arrays
+    - Most common is the 2D array, which works like a table (rows & columns)
+    */
+
+    //Examples
+    public class Main{
+        public static void main(String [] args){
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            cars[0] = "Opel";
+            System.out.println(cars[0]);
+        }
+    }
+
+    public class Main{
+        public static void main(String [] args){
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            for (int i = 0; i < cars.length; i++) {
+                System.out.println(cars[i]);
+            }
+        }
+    }
+
+    public class Main{
+        public static void main(String [] args){
+            int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+            for (int[] row : myNumbers) {
+                 for (int i : row) {
+                     System.out.println(i);
+                 }
+            }
+        }
+    }
