@@ -427,3 +427,24 @@
             }
         }
     }
+
+//Java Methods
+    /*
+    - A method = a block of code that runs only when it is called
+    - Can take parameters (data inputs)
+    - Used to reuse code instead of writing it multiple times
+    - Also known as functions
+    */
+
+    //Examples
+    public class Main{
+        static void myMethod(){
+            System.out.println("Hello!");
+        }
+
+        public static void main(String [] args){
+            myMethod();
+            myMethod();
+            myMethod();
+        }
+    }
